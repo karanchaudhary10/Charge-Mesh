@@ -29,3 +29,7 @@ API report.
 On-chain status values are `0 = verified`, `1 = review`, and `2 = flagged`.
 Duplicate writes with identical report contents succeed without changing state;
 reusing a report ID for different contents reverts.
+
+Before deploying, run the Foundry test suite from the repository root with
+`forge test --root contracts` and verify that the configured forwarder matches
+the target CRE environment.

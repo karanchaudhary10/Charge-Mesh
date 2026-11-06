@@ -4,6 +4,4 @@ export * from "./validation.js";
 export * from "./canonical.js";
 export * from "./billing.js";
 export * from "./hcs.js";
-export * from "./validation.js";
 export * from "./attestation.js";
-export * from "./types.js";

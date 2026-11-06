@@ -13,8 +13,8 @@ async function main() {
   try {
     const topicId = await client.createTopic();
     console.log(topicId);
-  } catch (e: any) {
-    console.error(e?.message || e);
+  } catch (error: unknown) {
+    console.error(error instanceof Error ? error.message : String(error));
     process.exit(1);
   } finally {
     client.close();

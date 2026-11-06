@@ -99,6 +99,9 @@ npm run build
 npm start
 ```
 
+Run `npm run typecheck` before opening a change that crosses package
+boundaries; the shared package is checked before the server and web workspaces.
+
 The production server serves only the API. Serve `apps/web/dist` with a static host or put a reverse proxy in front of the API.
 
 ## First-run flow
